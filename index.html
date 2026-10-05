@@ -14,19 +14,19 @@
     <a class="brand" href="#home" aria-label="Chokulit home"><img src="assets/logo.png" alt="Chokulit logo"></a>
     <nav class="navlinks">
       <a href="#our-flavours">Flavours</a>
-      <a href="founders.html">Founders</a>
-      <a href="reviews.html">Reviews</a>
+      <a href="#our-menu">Menu</a>
       <a href="#our-creations">Creations</a>
       <a href="#payment">Payment</a>
+      <a href="cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a>
     </nav>
     <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
   </div>
   <div class="wrap mobile-nav">
     <a href="#our-flavours">Flavours</a>
-    <a href="founders.html">Founders</a>
-    <a href="reviews.html">Reviews</a>
+    <a href="#our-menu">Menu</a>
     <a href="#our-creations">Creations</a>
     <a href="#payment">Payment</a>
+    <a href="cart.html">Cart (<span id="cartCountMobile">0</span>)</a>
   </div>
 </header>
 
@@ -38,8 +38,8 @@
         <div class="hero-logo"><img src="assets/logo.png" alt="Chokulit handcrafted chocolates logo"></div>
         <p class="lede">Small-batch chocolates, jar cakes, truffles and bento cakes — made fresh the moment you order. Choose your flavour, and we'll craft it just for you.</p>
         <div class="actions">
-          <a class="btn" href="#our-flavours">Explore flavours</a>
-          <a class="btn alt" href="#payment">Payment details</a>
+          <a class="btn" href="#our-menu">Order now</a>
+          <a class="btn alt" href="cart.html">View cart (<span id="cartCountHero">0</span>)</a>
         </div>
       </div>
       <div class="hero-img"><img src="assets/creation-1.png" alt="Chokulit handcrafted gift collection" fetchpriority="high"></div>
@@ -53,30 +53,36 @@
     </div>
   </section>
 
-  <section class="sec sec-ruled" id="what-we-make">
-    <div class="wrap">
-      <p class="eyebrow">Our collection</p>
-      <h2>What we make</h2>
-      <div class="features" style="margin-top:45px">
-        <article class="feature"><h3>Chocolates</h3><p>Handcrafted chocolates in your choice of flavour.</p></article>
-        <article class="feature"><h3>Jar Cakes</h3><p>Decadent cake layered in a jar — perfect for gifting.</p></article>
-        <article class="feature"><h3>Choco Truffles</h3><p>Rich, melt-in-the-mouth truffles.</p></article>
-        <article class="feature"><h3>Bento Cakes</h3><p>Mini personalised cakes for celebrations.</p></article>
-        <article class="feature"><h3>Customised</h3><p>Personalised chocolates for gifts and occasions.</p></article>
-      </div>
-    </div>
-  </section>
-
   <section class="sec sec-ruled" id="our-menu">
     <div class="wrap">
       <p class="eyebrow">Fresh on order</p>
       <h2>Our Menu</h2>
-      <div class="menu-list" style="margin-top:35px">
-        <article class="menu-item"><h3>Signature Chocolates <span class="price">From ₹299</span></h3><p>Handcrafted chocolates in your chosen flavour.</p></article>
-        <article class="menu-item"><h3>Jar Cakes <span class="price">From ₹399</span></h3><p>Layered cake in a jar, ready to gift.</p></article>
-        <article class="menu-item"><h3>Choco Truffles <span class="price">From ₹349</span></h3><p>Rich, creamy truffles in classic and fruit flavours.</p></article>
-        <article class="menu-item"><h3>Bento Cakes <span class="price">From ₹499</span></h3><p>Mini personalised celebration cakes.</p></article>
-        <article class="menu-item"><h3>Customised Chocolates <span class="price">Custom</span></h3><p>Made to order for any occasion.</p></article>
+      <div class="menu-grid" style="margin-top:35px">
+        <article class="menu-card">
+          <h3>Signature Chocolates</h3>
+          <p>Handcrafted chocolates in your chosen flavour.</p>
+          <div class="menu-row"><span class="price">₹299</span><button class="btn add-btn" data-name="Signature Chocolates" data-price="299">Add to cart</button></div>
+        </article>
+        <article class="menu-card">
+          <h3>Jar Cakes</h3>
+          <p>Layered cake in a jar, ready to gift.</p>
+          <div class="menu-row"><span class="price">₹399</span><button class="btn add-btn" data-name="Jar Cakes" data-price="399">Add to cart</button></div>
+        </article>
+        <article class="menu-card">
+          <h3>Choco Truffles</h3>
+          <p>Rich, creamy truffles in classic and fruit flavours.</p>
+          <div class="menu-row"><span class="price">₹349</span><button class="btn add-btn" data-name="Choco Truffles" data-price="349">Add to cart</button></div>
+        </article>
+        <article class="menu-card">
+          <h3>Bento Cakes</h3>
+          <p>Mini personalised celebration cakes.</p>
+          <div class="menu-row"><span class="price">₹499</span><button class="btn add-btn" data-name="Bento Cakes" data-price="499">Add to cart</button></div>
+        </article>
+        <article class="menu-card">
+          <h3>Customised Chocolates</h3>
+          <p>Made to order for any occasion. Tell us your idea!</p>
+          <div class="menu-row"><span class="price">Custom</span><a class="btn alt" href="https://wa.me/918340883349">WhatsApp us</a></div>
+        </article>
       </div>
     </div>
   </section>
@@ -104,8 +110,8 @@
       <p class="eyebrow">Simple & easy</p>
       <h2>How to order</h2>
       <div class="steps" style="margin-top:42px">
-        <article class="step"><span class="num">01</span><h3>Pick your treat</h3><p class="body">Choose from our menu and pick your flavour.</p></article>
-        <article class="step"><span class="num">02</span><h3>Message us</h3><p class="body">Send us your order details.</p></article>
+        <article class="step"><span class="num">01</span><h3>Add to cart</h3><p class="body">Pick your treats and add them to the cart.</p></article>
+        <article class="step"><span class="num">02</span><h3>Checkout</h3><p class="body">Enter your details and pay via UPI.</p></article>
         <article class="step"><span class="num">03</span><h3>We make it fresh</h3><p class="body">Your order is crafted fresh, just for you.</p></article>
         <article class="step"><span class="num">04</span><h3>Enjoy</h3><p class="body">Receive your chocolates and savour every bite.</p></article>
       </div>
@@ -160,7 +166,7 @@
 
   <section class="sec payment" id="payment">
     <div class="wrap payment-card">
-      <div><p class="eyebrow">Mode of payment</p><h2>UPI</h2><p class="note">Use this number for your Chokulit UPI payment:</p></div>
+      <div><p class="eyebrow">Mode of payment</p><h2>UPI</h2><p class="note">Pay online via UPI (PhonePe, GPay, Paytm) at checkout.</p></div>
       <div>
         <div class="upi" id="upiNumber">83408 83349</div>
         <button class="btn copy" id="copyUpi" type="button">Copy number</button>
@@ -182,7 +188,7 @@
 <footer class="footer">
   <div class="wrap footer-grid">
     <div><h3>Chokulit</h3><p>Handcrafted chocolates, made fresh on order. Every piece made with love in small batches.</p></div>
-    <div><a href="#our-flavours">Flavours</a><br><a href="founders.html">Founders</a><br><a href="reviews.html">Reviews</a><br><a href="#payment">Payment</a></div>
+    <div><a href="#our-flavours">Flavours</a><br><a href="#our-menu">Menu</a><br><a href="cart.html">Cart</a><br><a href="#payment">Payment</a></div>
   </div>
   <div class="wrap footer-bottom">© 2026 Chokulit. All rights reserved.</div>
 </footer>
